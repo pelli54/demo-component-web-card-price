@@ -1,0 +1,47 @@
+.switch{
+  background: linear-gradient(to right, rgb(168, 120, 223), rgb(114, 4, 177));
+  height: 36px; 
+  width: 64px;
+  border-radius: 18px;
+  margin: 10px 20px;
+  box-shadow: 0 0 5px #0003;
+  position: relative;
+}
+.switch .circle{
+  content:'';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background: #fff;
+  top: 4px;
+  left: 4px;
+  box-shadow: 5px 5px 10px #0003, inset 3px 3px 7px #0003;
+  transition: all ease-in-out 0.4s;
+}
+.on{
+  left: 32px !important;
+  transition: all ease 0.8s;
+}
+.bg-degree{
+  background: linear-gradient(to right, rgb(168, 120, 223), rgb(114, 4, 177));
+}
+#card{
+  transition: transform ease 0.3s;
+}
+.selected{
+  background: linear-gradient(to right, rgb(168, 120, 223), rgb(114, 4, 177));
+  transform: scale(1.2);
+  z-index: 100;
+  color: white;
+  border-radius: 12px;
+  padding: 0;
+  transition: transform ease 0.3s;
+}
+.selected hr{
+  border-top: solid 1px #fff6;
+}
+.selected button{
+  background: #fff;
+  color: rgb(152, 30, 168) !important;
+}
